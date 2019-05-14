@@ -1,0 +1,112 @@
+body {
+  background-color: tomato;
+}
+
+#final-score {
+  text-align: center;
+  font-family: 'Kalam', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: dodgerblue;
+  color: white;
+}
+
+#panel {
+  font-family: 'Patrick Hand SC', cursive;
+  text-align: center;
+  font-size: 20px;
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 40px;
+  color: white;
+}
+
+#score-value, #time-value, #marbles-left-value {
+  font-family: 'Kalam', cursive;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#instructions {
+  font-family: 'Laila', serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  width: 80%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.btn {
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+}
+
+button {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 20px;
+  background-color: dodgerblue;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.place {
+  text-align: center;
+  padding: 5px;
+  width: 10%;
+  background-color: skyblue;
+}
+
+.marble {
+  width: 100%;
+}
+
+.b-tl {
+  border-top-left-radius: 50%;
+}
+
+.b-tr {
+  border-top-right-radius: 50%;
+}
+
+.b-bl {
+  border-bottom-left-radius: 50%;
+}
+
+.b-br {
+  border-bottom-right-radius: 50%;
+}
+
+.attention {
+  animation: heartbeat 1.5s ease-in-out both;
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
